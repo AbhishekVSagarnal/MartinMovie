@@ -1,48 +1,1228 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martin Movie</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Martin Movie</h1>
-        <nav>
-            <ul>
-                <li><a href="#featured">Featured</a></li>
-                <li><a href="#latest-reviews">Latest Reviews</a></li>
-                <li><a href="#upcoming-releases">Upcoming Releases</a></li>
-            </ul>
-        </nav>
-    </header>
+<!DOCTYPE html><!--[if IE 9]>    <html class="no-js lt-ie10" lang="en-US"> <![endif]--><!--[if gt IE 9]><!--><html class="js" lang="en-US"><!--<![endif]--><head>
 
-    <section id="featured">
-        <h2>Featured Movies</h2>
-        <div class="movie-grid" id="featured-movies">
-            <!-- Movies will be loaded here by JavaScript -->
-        </div>
-    </section>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<title>Film For Fans – Your home for movie news, reviews, and movie fan views</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//stats.wp.com">
+<link rel="dns-prefetch" href="//i0.wp.com">
+<link href="https://fonts.gstatic.com" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="Film For Fans » Feed" href="https://filmforfans.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Film For Fans » Comments Feed" href="https://filmforfans.com/comments/feed/">
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.26.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="../../filmforfans.com/wp-content/themes/rife-free/js/webfontloader.min.js" type="text/javascript" async=""></script><script src="//www.googletagmanager.com/gtag/js?id=G-ZWR8PD7VN1" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async=""></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.26.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/filmforfans.com\/"};
+				if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
 
-    <section id="latest-reviews">
-        <h2>Latest Reviews</h2>
-        <div class="reviews" id="latest-reviews-content">
-            <!-- Reviews will be loaded here by JavaScript -->
-        </div>
-    </section>
+								var disableStrs = [
+										'ga-disable-G-ZWR8PD7VN1',
+									];
 
-    <section id="upcoming-releases">
-        <h2>Upcoming Releases</h2>
-        <ul id="upcoming-releases-list">
-            <!-- Releases will be loaded here by JavaScript -->
-        </ul>
-    </section>
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
 
-    <footer>
-        <p>&copy; 2024 Martin Movie</p>
-    </footer>
+					return false;
+				}
 
-    <script src="script.js"></script>
-</body>
-</html>
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-ZWR8PD7VN1', {"forceSSL":"true","link_attribution":"true"} );
+															window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/filmforfans.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.3"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id="wp-emoji-styles-inline-css" type="text/css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="../../filmforfans.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min_ver%3D4.2.17.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="../../filmforfans.com/wp-includes/js/mediaelement/wp-mediaelement.min_ver%3D6.5.3.css" type="text/css" media="all">
+<style id="jetpack-sharing-buttons-style-inline-css" type="text/css">
+.jetpack-sharing-buttons__services-list{display:flex;flex-direction:row;flex-wrap:wrap;gap:0;list-style-type:none;margin:5px;padding:0}.jetpack-sharing-buttons__services-list.has-small-icon-size{font-size:12px}.jetpack-sharing-buttons__services-list.has-normal-icon-size{font-size:16px}.jetpack-sharing-buttons__services-list.has-large-icon-size{font-size:24px}.jetpack-sharing-buttons__services-list.has-huge-icon-size{font-size:36px}@media print{.jetpack-sharing-buttons__services-list{display:none!important}}.editor-styles-wrapper .wp-block-jetpack-sharing-buttons{gap:0;padding-inline-start:0}ul.jetpack-sharing-buttons__services-list.has-background{padding:1.25em 2.375em}
+</style>
+<link rel="stylesheet" id="nfd-wonder-blocks-utilities-css" href="../../filmforfans.com/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-patterns/assets/build/utilities_ver%3D1.0.0.css" type="text/css" media="all">
+<style id="classic-theme-styles-inline-css" type="text/css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="searchwp-forms-css" href="../../filmforfans.com/wp-content/plugins/searchwp-live-ajax-search/assets/styles/frontend/search-forms_ver%3D1.8.2.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min_ver%3D5.29.0.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/css/frontend.min_ver%3D3.21.8.css" type="text/css" media="all">
+<link rel="stylesheet" id="swiper-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min_ver%3D8.4.5.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-12095-css" href="../../filmforfans.com/wp-content/uploads/elementor/css/post-12095_ver%3D1634092386.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-global-css" href="../../filmforfans.com/wp-content/uploads/elementor/css/global_ver%3D1634092701.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-12030-css" href="../../filmforfans.com/wp-content/uploads/elementor/css/post-12030_ver%3D1700337013.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-lightgallery-css" href="../../filmforfans.com/wp-content/themes/rife-free/js/light-gallery/css/lightgallery.min_ver%3D1.9.0.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min_ver%3D4.7.0.css" type="text/css" media="all">
+<link rel="stylesheet" id="a13-icomoon-css" href="../../filmforfans.com/wp-content/themes/rife-free/css/icomoon_ver%3D2.4.21.css" type="text/css" media="all">
+<link rel="stylesheet" id="a13-main-style-css" href="../../filmforfans.com/wp-content/themes/rife-free/style_ver%3D2.4.21.css" type="text/css" media="all">
+<link rel="stylesheet" id="chld_thm_cfg_child-css" href="../../filmforfans.com/wp-content/themes/rife-free-child/style_ver%3D2.4.9.1595815988.css" type="text/css" media="all">
+<link rel="stylesheet" id="a13-user-css-css" href="../../filmforfans.com/wp-content/uploads/apollo13_framework_files/css/user_ver%3D2.4.21_1627594922.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-5-all-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min_ver%3D3.21.8.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min_ver%3D3.21.8.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min_ver%3D5.15.3.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min_ver%3D5.15.3.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min_ver%3D5.15.3.css" type="text/css" media="all">
+<script type="text/javascript" src="../../filmforfans.com/wp-includes/js/jquery/jquery.min_ver%3D3.7.1.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-includes/js/jquery/jquery-migrate.min_ver%3D3.4.1.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min_ver%3D8.26.0.js" id="monsterinsights-frontend-script-js"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id="monsterinsights-frontend-script-js-extra">/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/filmforfans.com","hash_tracking":"false","v4_id":"G-ZWR8PD7VN1"};/* ]]> */
+</script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-patterns/assets/build/utilities_ver%3D1.0.0.js" id="nfd-wonder-blocks-utilities-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min_ver%3D3.21.8.js" id="font-awesome-4-shim-js"></script>
+<link rel="https://api.w.org/" href="https://filmforfans.com/wp-json/"><link rel="alternate" type="application/json" href="https://filmforfans.com/wp-json/wp/v2/pages/12030"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://filmforfans.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.5.3">
+<link rel="canonical" href="https://filmforfans.com/">
+<link rel="shortlink" href="https://filmforfans.com/">
+<link rel="alternate" type="application/json+oembed" href="https://filmforfans.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffilmforfans.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://filmforfans.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffilmforfans.com%2F&amp;format=xml">
+	<style>img#wpstats{display:none}</style>
+				<script>
+			( function() {
+				window.onpageshow = function( event ) {
+					// Defined window.wpforms means that a form exists on a page.
+					// If so and back/forward button has been clicked,
+					// force reload a page to prevent the submit button state stuck.
+					if ( typeof window.wpforms !== 'undefined' && event.persisted ) {
+						window.location.reload();
+					}
+				};
+			}() );
+		</script>
+		<script type="text/javascript">
+// <![CDATA[
+(function(){
+    var docElement = document.documentElement,
+        className = docElement.className;
+    // Change `no-js` to `js`
+    var reJS = new RegExp('(^|\\s)no-js( |\\s|$)');
+    //space as literal in second capturing group cause there is strange situation when \s is not catched on load when other plugins add their own classes
+    className = className.replace(reJS, '$1js$2');
+    docElement.className = className;
+})();
+// ]]>
+</script><script type="text/javascript">
+// <![CDATA[
+WebFontConfig = {
+    google: {"families":["Raleway:400,700,900","Raleway:400,700,900"]},
+    active: function () {
+        //tell listeners that fonts are loaded
+        if (window.jQuery) {
+            jQuery(document.body).trigger('webfontsloaded');
+        }
+    }
+};
+(function (d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = 'https://filmforfans.com/wp-content/themes/rife-free/js/webfontloader.min.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    s.parentNode.insertBefore(wf, s);
+})(document);
+// ]]>
+</script>        <style>
+            #nfd-site-status {
+				align-items: center;
+                background-color: #F8F8F8;
+				border-radius: 2px;
+				border-style: solid;
+				border-width: 1px;
+                color: #333333;
+				display: flex;
+				font-weight: 500;
+				gap: 2px;
+				height: 22px;
+				margin-top: 4px;
+                padding: 0 14px;
+            }
+
+			#wpadminbar #wp-admin-bar-site-status .ab-item{
+				height:22px;
+			}
+
+			#nfd-site-status[data-coming-soon="true"] {
+				border-color: var(--Dark-Red, #C71919);
+            }
+			
+			#nfd-site-status[data-coming-soon="false"] {
+				border-color: var(--A11y-GRN, #278224);
+			}
+
+			#nfd-site-status span { 
+				display: none;
+				text-transform: uppercase;
+				font-weight: 500;
+			}
+
+            #nfd-site-status[data-coming-soon="true"] #nfd-site-status-coming-soon {
+                color: var(--Dark-Red, #C71919);
+				display: inline-block;
+			}
+
+			#nfd-site-status[data-coming-soon="false"] #nfd-site-status-live {
+                color: var(--A11y-GRN, #278224);
+                display: inline-block;
+            }
+        </style>
+		<meta name="generator" content="Elementor 3.21.8; features: e_optimized_assets_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+<link rel="icon" href="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/07/cropped-Film-for-Fans-logo-1_fit%3D32%252C32%26ssl%3D1.jpg" sizes="32x32">
+<link rel="icon" href="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/07/cropped-Film-for-Fans-logo-1_fit%3D192%252C192%26ssl%3D1.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/07/cropped-Film-for-Fans-logo-1_fit%3D180%252C180%26ssl%3D1.jpg">
+<meta name="msapplication-TileImage" content="https://i0.wp.com/filmforfans.com/wp-content/uploads/2020/07/cropped-Film-for-Fans-logo-1.jpg?fit=270%2C270&amp;ssl=1">
+		<style type="text/css" id="wp-custom-css">
+			.page-id-16 .head {
+	background: #595959;
+}		</style>
+		<script src="../../filmforfans.com/wp-includes/js/wp-emoji-release.min_ver%3D6.5.3.js" defer=""></script></head>
+
+<body id="top" class="home page-template-default page page-id-12030 side-menu-eff-7 header-horizontal site-layout-full elementor-default elementor-kit-12095 elementor-page elementor-page-12030" itemtype="https://schema.org/WebPage" itemscope="">
+<div class="whole-layout">
+<div id="preloader" class="flash onReady">
+    <div class="preload-content">
+        <div class="preloader-animation">				<div class="pace-progress"><div class="pace-progress-inner"></div></div>
+		        <div class="pace-activity"></div>
+				</div>
+        <a class="skip-preloader a13icon-cross" href="#"></a>
+    </div>
+</div>
+                <div class="page-background to-move"></div>
+        <header id="header" class="to-move a13-horizontal header-type-one_line a13-normal-variant header-variant-one_line narrow tools-icons-2 no-sticky no-fixed" itemtype="https://schema.org/WPHeader" itemscope="">
+	<div class="head">
+		<div class="logo-container" itemtype="https://schema.org/Organization" itemscope=""><a class="logo normal-logo image-logo" href="https://filmforfans.com/" title="Film For Fans" rel="home" itemprop="url"><img fetchpriority="high" src="../../filmforfans.com/wp-content/uploads/2020/07/Film-for-Fans-logo.jpg" alt="Film For Fans" width="1400" height="1400" itemprop="logo"></a></div>
+		<nav id="access" class="navigation-bar" itemtype="https://schema.org/SiteNavigationElement" itemscope=""><!-- this element is need in HTML even if menu is disabled -->
+							<div class="menu-container"><ul id="menu-site-menu" class="top-menu with-effect menu--ferdinand opener-icons-on"><li id="menu-item-12169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-12030 current_page_item menu-item-12169 normal-menu"><a href="https://filmforfans.com/"><span><em>Home</em></span></a></li>
+<li id="menu-item-12170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12170 normal-menu"><a href="https://filmforfans.com/film-for-fans-podcast/"><span><em>Podcast</em></span></a></li>
+<li id="menu-item-12217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12217 normal-menu"><a href="https://filmforfans.com/blog/"><span><em>Blog</em></span></a></li>
+<li id="menu-item-12184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12184 normal-menu"><a href="https://www.youtube.com/channel/UCTF7lyZNWijIYR69o-wHD7w/"><span><em>YouTube</em></span></a></li>
+<li id="menu-item-12189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12189 normal-menu"><a href="https://compiled.social/filmforfans"><span><em>Subscribe</em></span></a></li>
+</ul></div>					</nav>
+		<!-- #access -->
+		<div id="header-tools" class=" icons-2"><button id="search-button" class="a13icon-search tool" title="Search"><span class="screen-reader-text">Search</span></button><button id="side-menu-switch" class="fa fa-bookmark tool" title="More info"><span class="screen-reader-text">More info</span></button><button id="mobile-menu-opener" class="a13icon-menu tool" title="Main menu"><span class="screen-reader-text">Main menu</span></button></div>			</div>
+	<div class="search-container"><div class="search"><span class="a13icon-search"></span>
+                <form class="search-form" role="search" method="get" action="https://filmforfans.com/">
+                    <fieldset class="semantic">
+                        <input placeholder="Search …" type="search" name="s" id="s1" data-swplive="true" value="">
+                        <input type="submit" id="searchsubmit1" title="Search" value="Search">
+                        
+                        
+                    </fieldset>
+                </form><span class="a13icon-cross close"></span></div><div id="search-results-header"></div></div></header>
+    <div id="mid" class="to-move no-top-space no-bottom-space layout-center layout-parted layout-no-edge layout-fixed no-sidebars">
+		<article id="content" class="clearfix" itemtype="https://schema.org/CreativeWork" itemscope="">
+			<div class="content-limiter">
+				<div id="col-mask">
+
+					<div id="post-12030" class="content-box post-12030 page type-page status-publish">
+						<div class="formatter">
+														<div class="real-content" itemprop="text">
+										<div data-elementor-type="wp-post" data-elementor-id="12030" class="elementor elementor-12030">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-e25d36d elementor-section-stretched elementor-section-height-min-height elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="e25d36d" data-element_type="section" id="home" data-settings="{" stretch_section":"section-stretched","background_background":"classic"}"="">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7d1465e4 animated-slow elementor-invisible" data-id="7d1465e4" data-element_type="column" data-settings="{" animation":"fadein","animation_delay":500}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-602ebf3b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="602ebf3b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-37b882f4" data-id="37b882f4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5bb6b69 elementor-widget elementor-widget-writing-effect-headline" data-id="5bb6b69" data-element_type="widget" data-widget_type="writing-effect-headline.default">
+				<div class="elementor-widget-container">
+					<h2 class="a13ree-written-headline" data-speed="82" data-loop="1">
+							<span class="before-written">your home for movie<br></span>
+			
+							<span class="written-lines elementor-screen-only">news
+reviews
+fan views</span>
+			
+					</h2>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4e835cec elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4e835cec" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6bf50a39" data-id="6bf50a39" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6a6a379e elementor-widget elementor-widget-heading" data-id="6a6a379e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-heading-title elementor-size-default">Film for Fans is a site and podcast for movie fans from movie fans</div>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7a2ed48" data-id="7a2ed48" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-5531780b elementor-widget elementor-widget-spacer" data-id="5531780b" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-4be6266f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4be6266f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-26f73740" data-id="26f73740" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2b124425 elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="2b124425" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="#podcast" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Podcast</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8ed5867" data-id="8ed5867" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2397170 elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="2397170" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="https://filmforfans.com/blog/" target="_blank">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Blog</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3b96fc79" data-id="3b96fc79" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-14b6d863 elementor-section-stretched elementor-section-full_width elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-phone elementor-section-height-default elementor-section-height-default" data-id="14b6d863" data-element_type="section" data-settings="{" stretch_section":"section-stretched","background_background":"classic"}"="">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-642436dd" data-id="642436dd" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-10e68547 elementor-widget elementor-widget-spacer" data-id="10e68547" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-684a3a56 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="684a3a56" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-6244b8c2 elementor-invisible" data-id="6244b8c2" data-element_type="column" data-settings="{" animation":"fadeinup"}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1d3bb4da elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="1d3bb4da" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="far fa-gem"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h1 class="elementor-icon-box-title">
+						<span>
+							News						</span>
+					</h1>
+				
+									<p class="elementor-icon-box-description">
+						We'll bring you interesting stories from the movie industry from the fans perspective					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3f0474da elementor-invisible" data-id="3f0474da" data-element_type="column" data-settings="{" animation":"fadeinup","animation_delay":300}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-62f82dfb elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="62f82dfb" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="fas fa-code"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h1 class="elementor-icon-box-title">
+						<span>
+							Reviews						</span>
+					</h1>
+				
+									<p class="elementor-icon-box-description">
+						Your home for quick and in depth reviews of movies old and new					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-71419fa4 elementor-invisible" data-id="71419fa4" data-element_type="column" data-settings="{" animation":"fadeinup","animation_delay":600}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2be22d29 elementor-position-left elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box" data-id="2be22d29" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span class="elementor-icon elementor-animation-">
+				<i aria-hidden="true" class="far fa-heart"></i>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h1 class="elementor-icon-box-title">
+						<span>
+							Fan Views						</span>
+					</h1>
+				
+									<p class="elementor-icon-box-description">
+						Our fun discussions about anything and everything from the world of movies					</p>
+				
+			</div>
+			
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-235fb58e elementor-widget elementor-widget-spacer" data-id="235fb58e" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-36a13242 elementor-section-content-middle elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="36a13242" data-element_type="section" id="podcast" data-settings="{" stretch_section":"section-stretched","background_background":"gradient"}"="">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6bf5fb7d" data-id="6bf5fb7d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-7ebfdaf0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7ebfdaf0" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-64cb402d" data-id="64cb402d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1a34b40b elementor-widget elementor-widget-heading" data-id="1a34b40b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Latest episode</span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-74ca375c elementor-widget elementor-widget-heading" data-id="74ca375c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Film for fans podcast</h2>		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-3729f32 elementor-widget elementor-widget-html" data-id="3729f32" data-element_type="widget" data-settings="{" _animation":"none"}"="" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<iframe src="https://castbox.fm/app/castbox/player/id3131186?v=8.22.11&amp;autoplay=0" frameborder="0" width="100%" height="500"></iframe>
+		</div>
+				</div>
+				<div class="elementor-element elementor-element-6656de7 elementor-widget elementor-widget-image-carousel" data-id="6656de7" data-element_type="widget" data-settings="{" slides_to_scroll":"3","navigation":"none","autoplay_speed":12000,"pause_on_hover":"no","pause_on_interaction":"no","speed":1000,"autoplay":"yes","infinite":"yes"}"="" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-carousel-wrapper swiper" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 7"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/iu-18_fit%3D300%252C86%26ssl%3D1.png" alt="Listen on Apple Podcasts"></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 7"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/iu-19_fit%3D300%252C76%26ssl%3D1.png" alt="iu-19"></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 7"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/07/spotify-podcast-badge-blk-wht-660x160-1_fit%3D300%252C73%26ssl%3D1.png" alt="spotify-podcast-badge-blk-wht-660x160"></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 7"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/Stitcher_Listen_Badge_Color_Dark_BG_fit%3D300%252C90%26ssl%3D1.png" alt="Stitcher_Listen_Badge_Color_Dark_BG"></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 7"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/iu-48_fit%3D300%252C100%26ssl%3D1.jpeg" alt="iu-48"></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 of 7"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/iu-21_fit%3D300%252C77%26ssl%3D1.png" alt="iu-21"></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 of 7"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/iu-20_fit%3D300%252C89%26ssl%3D1.png" alt="iu-20"></figure></div>			</div>
+							
+									</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-7cad5495 elementor-section-stretched elementor-section-full_width elementor-section-content-middle elementor-reverse-mobile elementor-section-height-default elementor-section-height-default" data-id="7cad5495" data-element_type="section" data-settings="{" stretch_section":"section-stretched","background_background":"classic"}"="">
+						<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-27e13f53" data-id="27e13f53" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7b51b563 elementor-widget elementor-widget-spacer" data-id="7b51b563" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-57ec55ea elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="57ec55ea" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-348694e8" data-id="348694e8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ae70106 elementor-widget elementor-widget-heading" data-id="ae70106" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Movie Rankings</span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-68f9bbf7 elementor-widget elementor-widget-heading" data-id="68f9bbf7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">10 Best Movie Opening scenes</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-78643be elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="78643be" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-30083bfa elementor-widget elementor-widget-text-editor" data-id="30083bfa" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Check out our list of movies that hook you right from the beginning.�&nbsp;</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-34100f36 elementor-widget elementor-widget-spacer" data-id="34100f36" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6d25ecd6 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="6d25ecd6" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="https://filmforfans.com/10-best-movie-opening-scenes/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Read more</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-5a3eccef elementor-widget elementor-widget-spacer" data-id="5a3eccef" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-63b812db" data-id="63b812db" data-element_type="column" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-56db7a89 elementor-widget elementor-widget-spacer" data-id="56db7a89" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-f9af97e elementor-section-stretched elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-id="f9af97e" data-element_type="section" data-settings="{" stretch_section":"section-stretched","background_background":"classic"}"="">
+						<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9c52d21" data-id="9c52d21" data-element_type="column" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-dde0730 elementor-widget elementor-widget-spacer" data-id="dde0730" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3bee046" data-id="3bee046" data-element_type="column" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-893c913 elementor-widget elementor-widget-spacer" data-id="893c913" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-8f7eb1e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8f7eb1e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a22ad9d" data-id="a22ad9d" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-118c2c7 elementor-widget elementor-widget-heading" data-id="118c2c7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Movie Reviews</span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-730280c elementor-widget elementor-widget-heading" data-id="730280c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Mission Impossible: III Revisited</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-efd4985 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="efd4985" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-b8c353c elementor-widget elementor-widget-spacer" data-id="b8c353c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6e03bdf elementor-widget elementor-widget-text-editor" data-id="6e03bdf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Ryan and Rob revisit the third installment in the Mission Impossible series.�&nbsp;</p>						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-0c12935 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0c12935" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-920760e" data-id="920760e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0badfd9 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="0badfd9" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="https://filmforfans.com/mission-impossible-iii-revisited/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Mission Impossible III </span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4dcc7b73 elementor-section-stretched elementor-section-full_width elementor-section-content-middle elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-height-default elementor-section-height-default" data-id="4dcc7b73" data-element_type="section" data-settings="{" stretch_section":"section-stretched","background_background":"classic"}"="">
+						<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-38b7137b" data-id="38b7137b" data-element_type="column" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2d266016 elementor-widget elementor-widget-spacer" data-id="2d266016" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-50410d0b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="50410d0b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-564030bb" data-id="564030bb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5fa8cbdb elementor-widget elementor-widget-heading" data-id="5fa8cbdb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<span class="elementor-heading-title elementor-size-default">Movie Recommendations </span>		</div>
+				</div>
+				<div class="elementor-element elementor-element-48c325d5 elementor-widget elementor-widget-heading" data-id="48c325d5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">What to watch on Disney+ and Peacock</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-78ab7e65 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="78ab7e65" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-213da374 elementor-widget elementor-widget-text-editor" data-id="213da374" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Looking for a movie to watch tonight? Check out some Film for Fans recommendations for what to watch on Disney+ and Peacock.</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-60bd9f0c elementor-widget elementor-widget-spacer" data-id="60bd9f0c" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-12057af5 elementor-widget elementor-widget-spacer" data-id="12057af5" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-e3f1543 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e3f1543" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-b63f5f7" data-id="b63f5f7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-6a48e660 elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="6a48e660" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="https://filmforfans.com/what-to-watch-disney-jan-2021/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Disney+</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-ba7ab08" data-id="ba7ab08" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-5e0facd elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="5e0facd" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a class="elementor-button elementor-button-link elementor-size-md" href="https://filmforfans.com/movies-to-watch-peacock-jan-2021/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Peacock</span>
+					</span>
+					</a>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-49fbe96d" data-id="49fbe96d" data-element_type="column" data-settings="{" background_background":"classic"}"="">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-7a91e1c4 elementor-widget elementor-widget-spacer" data-id="7a91e1c4" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-719ce37e elementor-section-stretched elementor-section-content-middle elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="719ce37e" data-element_type="section" data-settings="{" stretch_section":"section-stretched","background_background":"classic"}"="">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5ed5c5e" data-id="5ed5c5e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4283e5ea elementor-widget elementor-widget-spacer" data-id="4283e5ea" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-23161407 elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="23161407" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-wider">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-50fcec9e" data-id="50fcec9e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-24d52e12 elementor-widget elementor-widget-heading" data-id="24d52e12" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-heading-title elementor-size-default">Say hello! We love it!</div>		</div>
+				</div>
+				<div class="elementor-element elementor-element-164fe8b8 elementor-widget elementor-widget-heading" data-id="164fe8b8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Get in touch.</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-1110d9c elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="1110d9c" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5e18bf80 elementor-widget elementor-widget-text-editor" data-id="5e18bf80" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Leave us a message</p>						</div>
+				</div>
+				<div class="elementor-element elementor-element-295d901 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="295d901" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+					<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<i aria-hidden="true" class="fas fa-envelope-open"></i>						</span>
+										<span class="elementor-icon-list-text"></span>
+									</li>
+						</ul>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-31231e97 elementor-widget elementor-widget-spacer" data-id="31231e97" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7af82637" data-id="7af82637" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-62ebf11 elementor-widget elementor-widget-wp-widget-wpforms-widget" data-id="62ebf11" data-element_type="widget" data-widget_type="wp-widget-wpforms-widget.default">
+				<div class="elementor-widget-container">
+			<div class="wpforms-container " id="wpforms-12141"><form id="wpforms-form-12141" class="wpforms-validate wpforms-form" data-formid="12141" method="post" enctype="multipart/form-data" action="/" data-token="4b7ff48a949e67966bf8a8d2f89cff8b" data-token-time="1716875249"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-12141-field_0-container" class="wpforms-field wpforms-field-name" data-field-id="0"><label class="wpforms-field-label" for="wpforms-12141-field_0">Name <span class="wpforms-required-label">*</span></label><div class="wpforms-field-row wpforms-field-medium"><div class="wpforms-field-row-block wpforms-first wpforms-one-half"><input type="text" id="wpforms-12141-field_0" class="wpforms-field-name-first wpforms-field-required" name="wpforms[fields][0][first]" required=""><label for="wpforms-12141-field_0" class="wpforms-field-sublabel after ">First</label></div><div class="wpforms-field-row-block wpforms-one-half"><input type="text" id="wpforms-12141-field_0-last" class="wpforms-field-name-last wpforms-field-required" name="wpforms[fields][0][last]" required=""><label for="wpforms-12141-field_0-last" class="wpforms-field-sublabel after ">Last</label></div></div></div><div id="wpforms-12141-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label" for="wpforms-12141-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-12141-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" spellcheck="false" required=""></div><div id="wpforms-12141-field_2-container" class="wpforms-field wpforms-field-textarea" data-field-id="2"><label class="wpforms-field-label" for="wpforms-12141-field_2">Comment or Message <span class="wpforms-required-label">*</span></label><textarea id="wpforms-12141-field_2" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][2]" required=""></textarea></div></div><!-- .wpforms-field-container --><div class="wpforms-field wpforms-field-hp"><label for="wpforms-12141-field-hp" class="wpforms-field-label">Message</label><input type="text" name="wpforms[hp]" id="wpforms-12141-field-hp" class="wpforms-field-medium"></div><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="12141"><input type="hidden" name="page_title" value="Home"><input type="hidden" name="page_url" value="https://filmforfans.com/"><input type="hidden" name="page_id" value="12030"><input type="hidden" name="wpforms[post_id]" value="12030"><button type="submit" name="wpforms[submit]" id="wpforms-submit-12141" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Submit" aria-live="assertive" value="wpforms-submit">Submit</button></div></form></div>  <!-- .wpforms-container -->		</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<div class="elementor-element elementor-element-3ef3376 elementor-widget elementor-widget-spacer" data-id="3ef3376" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-6121e01 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6121e01" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-20cb6eb" data-id="20cb6eb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0d7180e elementor-widget elementor-widget-heading" data-id="0d7180e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Film for fans Crew</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-2680b68 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="2680b68" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-463a389d elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="463a389d" data-element_type="section" id="clients" data-settings="{" stretch_section":"section-stretched","background_background":"classic"}"="">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5e447ea7" data-id="5e447ea7" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c007bcf elementor-widget elementor-widget-testimonial" data-id="c007bcf" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img decoding="async" width="1920" height="2560" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/IMG_0928-scaled_fit%3D1920%252C2560%26ssl%3D1.jpeg" class="attachment-full size-full wp-image-12121" alt="Ryan Dunlevy portrait" srcset="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/IMG_0928-scaled_w%3D1920%26ssl%3D1.jpeg 1920w, ../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/IMG_0928-scaled_resize%3D225%252C300%26ssl%3D1.jpeg 225w, ../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/IMG_0928-scaled_resize%3D768%252C1024%26ssl%3D1.jpeg 768w, ../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/IMG_0928-scaled_resize%3D1152%252C1536%26ssl%3D1.jpeg 1152w, ../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/IMG_0928-scaled_resize%3D1536%252C2048%26ssl%3D1.jpeg 1536w, ../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/IMG_0928-scaled_w%3D1600%26ssl%3D1.jpeg 1600w" sizes="(max-width: 800px) 100vw, 800px">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Ryan Dunlevy</div>
+																						<div class="elementor-testimonial-job">Host</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6e4ddbc8 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="6e4ddbc8" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-aa5bf1e" data-id="aa5bf1e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-91f4e3c elementor-widget elementor-widget-testimonial" data-id="91f4e3c" data-element_type="widget" data-widget_type="testimonial.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-testimonial-wrapper">
+			
+						<div class="elementor-testimonial-meta elementor-has-image elementor-testimonial-image-position-aside">
+				<div class="elementor-testimonial-meta-inner">
+											<div class="elementor-testimonial-image">
+							<img decoding="async" width="960" height="960" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/31543376_1694535953957745_4254916803274211328_n_fit%3D960%252C960%26ssl%3D1.jpg" class="attachment-full size-full wp-image-12155" alt="Rob Dunham" srcset="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/31543376_1694535953957745_4254916803274211328_n_w%3D960%26ssl%3D1.jpg 960w, ../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/31543376_1694535953957745_4254916803274211328_n_resize%3D300%252C300%26ssl%3D1.jpg 300w, ../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/31543376_1694535953957745_4254916803274211328_n_resize%3D150%252C150%26ssl%3D1.jpg 150w, ../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/31543376_1694535953957745_4254916803274211328_n_resize%3D768%252C768%26ssl%3D1.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">						</div>
+					
+										<div class="elementor-testimonial-details">
+														<div class="elementor-testimonial-name">Rob Dunham</div>
+																						<div class="elementor-testimonial-job">Host</div>
+													</div>
+									</div>
+			</div>
+					</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-8de50ec elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="8de50ec" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-cb76955 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cb76955" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cc28306" data-id="cc28306" data-element_type="column">
+			<div class="elementor-widget-wrap">
+							</div>
+		</div>
+					</div>
+		</section>
+				</div>
+										<div class="clear"></div>
+
+															</div>
+
+							
+						</div>
+					</div>
+									</div>
+			</div>
+		</article>
+
+			</div><!-- #mid -->
+
+<footer id="footer" class="to-move narrow classic footer-separator" itemtype="https://schema.org/WPFooter" itemscope=""><div class="foot-widgets four-col dark-sidebar"><div class="foot-content clearfix"><div id="media_image-8" class="widget widget_media_image"><img width="180" height="150" src="../../i0.wp.com/filmforfans.com/wp-content/uploads/2020/08/FfFlogowhitestacked_fit%3D180%252C150%26ssl%3D1.png" class="image wp-image-12161  attachment-full size-full" alt="" style="max-width: 100%; height: auto;" decoding="async"></div><div id="text-17" class="widget widget_text"><h3 class="title"><span>Film for Fan</span></h3>			<div class="textwidget"><p>We are dedicated<br>
+to bringing you<br>
+movies from a<br>
+fans perspective</p>
+</div>
+		</div><div id="contact-info-3" class="widget widget_contact_info"><h3 class="title"><span>FfF Crew</span></h3><div class="info"><div class="content-text">Ryan Dunlevy<br>
+Rob Dunham</div></div></div><div id="text-18" class="widget widget_text"><h3 class="title"><span>Pages</span></h3>			<div class="textwidget"><p><a href="https://filmforfans.com/home/">Home</a><br>
+<a href="https://filmforfans.com/">Podcast</a><br>
+<a href="https://filmforfans.com/5filmshulu-hbomax/">Blog</a></p>
+</div>
+		</div></div>
+                </div>			<div class="foot-items">
+				<div class="foot-content clearfix">
+	                <div class="foot-text"><a href="http://apollo13themes.com/rife">Rife</a> Wordpress Theme. Proudly Built By <a href="http://apollo13themes.com/">Apollo13</a></div>				</div>
+			</div>
+		</footer>		<nav id="side-menu" class="side-widget-menu light-sidebar at-right">
+			<div class="scroll-wrap">
+				<div id="a13-social-icons-3" class="widget widget_a13_social_icons"><div class="socials circles color black_hover"><a target="_blank" title="Spotify" href="https://open.spotify.com/show/04VJdQHHPl8iy2RzqIe3H8" class="a13_soc-spotify fa fa-spotify" rel="noopener"></a><a target="_blank" title="YouTube" href="https://www.youtube.com/channel/UCTF7lyZNWijIYR69o-wHD7w/%20" class="a13_soc-youtube fa fa-youtube" rel="noopener"></a></div></div><div id="text-4" class="widget widget_text"><h3 class="title"><span>Subscribe</span></h3>			<div class="textwidget"><p><a href="https://podcasts.apple.com/us/podcast/film-for-fans/id1524583302" target="_blank" rel="noopener">Apple</a><br>
+<a href="https://open.spotify.com/show/04VJdQHHPl8iy2RzqIe3H8" target="_blank" rel="noopener">Spotify</a><br>
+<a href="https://www.stitcher.com/s?fid=557664&amp;refid=stpr" target="_blank" rel="noopener">Stitcher</a><br>
+<a href="http://tun.in/pjYf6" target="_blank" rel="noopener">TuneIn</a><br>
+<a href="https://www.iheart.com/podcast/269-film-for-fans-69157520/" target="_blank" rel="noopener">iHeart Radio</a><br>
+<a href="https://www.google.com/podcasts?feed=aHR0cDovL3Jzcy5jYXN0Ym94LmZtL2V2ZXJlc3QvMDlhMDM0MjM4MzQ3NDFmZTk1ZWJmNTAzMTA5ZWE5NTcueG1s" target="_blank" rel="noopener">Google Podcasts</a><br>
+<a href="https://www.youtube.com/channel/UCTF7lyZNWijIYR69o-wHD7w/" target="_blank" rel="noopener">YouTube</a></p>
+</div>
+		</div>			</div>
+			<span class="a13icon-cross close-sidebar"></span>
+		</nav>
+				<a href="#top" id="to-top" class="to-top fa fa-angle-up"></a>
+		<div id="content-overlay" class="to-move"></div>
+		
+	</div><!-- .whole-layout -->
+        <script>
+            var _SEARCHWP_LIVE_AJAX_SEARCH_BLOCKS = true;
+            var _SEARCHWP_LIVE_AJAX_SEARCH_ENGINE = 'default';
+            var _SEARCHWP_LIVE_AJAX_SEARCH_CONFIG = 'default';
+        </script>
+        <link rel="stylesheet" id="e-animations-css" href="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/animations/animations.min_ver%3D3.21.8.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpforms-classic-base-css" href="../../filmforfans.com/wp-content/plugins/wpforms-lite/assets/css/frontend/classic/wpforms-base.min_ver%3D1.8.8.3.css" type="text/css" media="all">
+<script type="text/javascript" id="apollo13framework-plugins-js-extra">
+/* <![CDATA[ */
+var ApolloParams = {"ajaxurl":"https:\/\/filmforfans.com\/wp-admin\/admin-ajax.php","site_url":"https:\/\/filmforfans.com\/","defimgurl":"https:\/\/filmforfans.com\/wp-content\/themes\/rife-free\/images\/holders\/photo.png","options_name":"apollo13_option_rife","load_more":"Load more","loading_items":"Loading next items","anchors_in_bar":"","scroll_to_anchor":"1","writing_effect_mobile":"","writing_effect_speed":"90","hide_content_under_header":"content","default_header_variant":"normal","header_sticky_top_bar":"","header_color_variants":"on","show_header_at":"0","header_normal_social_colors":"color|black_hover|color|color_hover","header_light_social_colors":"semi-transparent|color_hover|color|color_hover","header_dark_social_colors":"semi-transparent|color_hover|color|color_hover","header_sticky_social_colors":"semi-transparent|color_hover|color|color_hover","close_mobile_menu_on_click":"1","menu_overlay_on_click":"","allow_mobile_menu":"1","submenu_opener":"fa-angle-down","submenu_closer":"fa-angle-up","submenu_third_lvl_opener":"fa-angle-right","submenu_third_lvl_closer":"fa-angle-left","posts_layout_mode":"fitRows","products_brick_margin":"0","products_layout_mode":"packery","albums_list_layout_mode":"packery","album_bricks_thumb_video":"","works_list_layout_mode":"packery","work_bricks_thumb_video":"","people_list_layout_mode":"fitRows","lg_lightbox_share":"1","lg_lightbox_controls":"1","lg_lightbox_download":"","lg_lightbox_counter":"1","lg_lightbox_thumbnail":"1","lg_lightbox_show_thumbs":"","lg_lightbox_autoplay":"1","lg_lightbox_autoplay_open":"","lg_lightbox_progressbar":"1","lg_lightbox_full_screen":"1","lg_lightbox_zoom":"1","lg_lightbox_mode":"lg-slide","lg_lightbox_speed":"600","lg_lightbox_preload":"1","lg_lightbox_hide_delay":"2000","lg_lightbox_autoplay_pause":"5000","lightbox_single_post":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/helpers.min_ver%3D2.4.21.js" id="apollo13framework-plugins-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/jquery.fitvids.min_ver%3D1.1.js" id="jquery-fitvids-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/jquery.fittext.min_ver%3D1.2.js" id="jquery-fittext-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/jquery.slides.min_ver%3D3.0.4.js" id="jquery-slides-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/jquery.sticky-kit.min_ver%3D1.1.2.js" id="jquery-sticky-kit-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/jquery.mousewheel.min_ver%3D3.1.13.js" id="jquery-mousewheel-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/typed.min_ver%3D1.1.4.js" id="jquery-typed-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/isotope.pkgd.min_ver%3D3.0.6.js" id="apollo13framework-isotope-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/light-gallery/js/lightgallery-all.min_ver%3D1.9.0.js" id="jquery-lightgallery-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/themes/rife-free/js/script.min_ver%3D2.4.21.js" id="apollo13framework-scripts-js"></script>
+<script type="text/javascript" id="swp-live-search-client-js-extra">
+/* <![CDATA[ */
+var searchwp_live_search_params = [];
+searchwp_live_search_params = {"ajaxurl":"https:\/\/filmforfans.com\/wp-admin\/admin-ajax.php","origin_id":12030,"config":{"default":{"engine":"default","input":{"delay":500,"min_chars":3},"results":{"position":"bottom","width":"css","offset":{"x":0,"y":0}},"spinner":{"lines":10,"length":8,"width":4,"radius":8,"corners":1,"rotate":0,"direction":1,"color":"#000","speed":1,"trail":60,"shadow":false,"hwaccel":false,"className":"spinner","zIndex":2000000000,"top":"50%","left":"50%"},"results_destroy_on_blur":false,"parent_el":"#search-results-header"}},"msg_no_config_found":"No valid SearchWP Live Search configuration found!","aria_instructions":"When autocomplete results are available use up and down arrows to review and enter to go to the desired page. Touch device users, explore by touch or with swipe gestures.","searchwp_live_search_client_nonce":"96728029d8"};;
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/searchwp-live-ajax-search/assets/javascript/dist/script.min_ver%3D1.8.2.js" id="swp-live-search-client-js"></script>
+<script type="text/javascript" src="../../stats.wp.com/e-202422.js" id="jetpack-stats-js" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="jetpack-stats-js-after">
+/* <![CDATA[ */
+_stq = window._stq || [];
+_stq.push([ "view", JSON.parse("{\"v\":\"ext\",\"blog\":\"180369513\",\"post\":\"12030\",\"tz\":\"0\",\"srv\":\"filmforfans.com\",\"j\":\"1:13.4.3\"}") ]);
+_stq.push([ "clickTrackerInit", "180369513", "12030" ]);
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min_ver%3D4.0.2.js" id="elementor-waypoints-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/rife-elementor-extensions/assets/js/frontend_ver%3D1.2.1.js" id="a13ree-frontend-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min_ver%3D3.21.8.js" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/elementor/assets/js/frontend-modules.min_ver%3D3.21.8.js" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-includes/js/jquery/ui/core.min_ver%3D1.13.2.js" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.21.8","is_static":false,"experimentalFeatures":{"e_optimized_assets_loading":true,"additional_custom_breakpoints":true,"e_swiper_latest":true,"container_grid":true,"home_screen":true,"ai-layout":true,"landing-pages":true},"urls":{"assets":"https:\/\/filmforfans.com\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":12030,"title":"Film%20For%20Fans%20%E2%80%93%20Your%20home%20for%20movie%20news%2C%20reviews%2C%20and%20movie%20fan%20views","excerpt":"","featuredImage":false}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/elementor/assets/js/frontend.min_ver%3D3.21.8.js" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-includes/js/underscore.min_ver%3D1.13.4.js" id="underscore-js"></script>
+<script type="text/javascript" id="wp-util-js-extra">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../filmforfans.com/wp-includes/js/wp-util.min_ver%3D6.5.3.js" id="wp-util-js"></script>
+<script type="text/javascript" id="wpforms-elementor-js-extra">
+/* <![CDATA[ */
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min_ver%3D1.8.8.3.js" id="wpforms-elementor-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/wpforms-lite/assets/lib/jquery.validate.min_ver%3D1.20.0.js" id="wpforms-validation-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/wpforms-lite/assets/lib/mailcheck.min_ver%3D1.1.2.js" id="wpforms-mailcheck-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/wpforms-lite/assets/lib/punycode.min_ver%3D1.0.0.js" id="wpforms-punycode-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/wpforms-lite/assets/js/share/utils.min_ver%3D1.8.8.3.js" id="wpforms-generic-utils-js"></script>
+<script type="text/javascript" src="../../filmforfans.com/wp-content/plugins/wpforms-lite/assets/js/frontend/wpforms.min_ver%3D1.8.8.3.js" id="wpforms-js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_minimum_price":"Amount entered is less than the required minimum.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_turnstile_fail_msg":"Cloudflare Turnstile verification failed, please try again later.","val_inputmask_incomplete":"Please fill out the field in required format.","uuid_cookie":"","locale":"en","wpforms_plugin_url":"https:\/\/filmforfans.com\/wp-content\/plugins\/wpforms-lite\/","gdpr":"","ajaxurl":"https:\/\/filmforfans.com\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1","currency_code":"USD","currency_thousands":",","currency_decimals":"2","currency_decimal":".","currency_symbol":"$","currency_symbol_pos":"left","val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","token_cache_lifetime":"86400"}
+/* ]]> */
+</script>
+
+</body></html>

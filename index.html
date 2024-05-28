@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Website</title>
+    <title>Martin Movie</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Film for Fans</h1>
+        <h1>Martin Movie</h1>
         <nav>
             <ul>
                 <li><a href="#featured">Featured</a></li>
@@ -20,41 +20,29 @@
 
     <section id="featured">
         <h2>Featured Movies</h2>
-        <div class="movie-grid">
-            <!-- Add featured movies here -->
-            <div class="movie">
-                <img src="movie1.jpg" alt="Movie 1">
-                <h3>Movie Title 1</h3>
-                <p>Short description of the movie.</p>
-            </div>
-            <!-- Repeat for more movies -->
+        <div class="movie-grid" id="featured-movies">
+            <!-- Movies will be loaded here by JavaScript -->
         </div>
     </section>
 
     <section id="latest-reviews">
         <h2>Latest Reviews</h2>
-        <div class="reviews">
-            <!-- Add reviews here -->
-            <article>
-                <h3>Review Title 1</h3>
-                <p>Brief review content...</p>
-                <a href="#">Read more</a>
-            </article>
-            <!-- Repeat for more reviews -->
+        <div class="reviews" id="latest-reviews-content">
+            <!-- Reviews will be loaded here by JavaScript -->
         </div>
     </section>
 
     <section id="upcoming-releases">
         <h2>Upcoming Releases</h2>
-        <ul>
-            <!-- Add upcoming releases here -->
-            <li>Movie Title 1 - Release Date</li>
-            <!-- Repeat for more releases -->
+        <ul id="upcoming-releases-list">
+            <!-- Releases will be loaded here by JavaScript -->
         </ul>
     </section>
 
     <footer>
-        <p>&copy; 2024 Film for Fans</p>
+        <p>&copy; 2024 Martin Movie</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
